@@ -108,7 +108,7 @@ function selectForms() {
             window.location.href = '../forms/checkVoucher.html';
             break;
         case '2':
-            window.location.href = '../forms.html';
+            window.location.href = '../index.html';
             break;
         case '3':
             window.location.href = '../forms/budgetRequestForm.html';
