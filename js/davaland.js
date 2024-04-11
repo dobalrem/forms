@@ -106,7 +106,7 @@ function selectForms() {
 
     switch (selectedValue) {
         case '1':
-            window.location.href = 'forms.html';
+            window.location.href = 'index.html';
             break;
         case '2':
             window.location.href = 'forms/budgetRequestForm.html';
