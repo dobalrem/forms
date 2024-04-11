@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Voucher</title>
+    <link rel="icon" href="../images/DAVALAND LOGO.png">
+    <link rel="stylesheet" href="../styles/cash.css">
+</head>
+<body>
+
+    <div class="selections" id="selections">
+        <label for="Choose Forms">CHOOSE FORMS</label>
+        <select name="forms" id="forms" onchange="selectForms()">
+            <option value="1">Check Voucher</option>
+            <option value="2">Acknowledgement Receipt</option>
+            <option value="3">Budget Request Form</option>
+            <option value="4">Investment Interest Form</option>
+            <option value="5">Sellers Payment</option>
+            <option value="6">Cash Voucher</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="content_container">
+            <div class="header">
+                <h1>DAVALAND REATLY CORP.</h1>
+            </div>
+
+            <div class="first_content_container">
+                <div class="check_paid_address_container">
+                    <div class="check_paid_address_content">
+                        <p>CHECK VOUCHER</p>
+                    </div>
+
+                    <div class="paid_address">
+                        <div class="paind_to">
+                            <span>Paid to:</span>
+                            <input type="text">
+                        </div>
+                        <div class="address">
+                            <span>Address:</span>
+                            <input type="text">
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="number_date">
+                    <span>NO:</span>
+                    <span class="print_count">
+                        <input type="text" id="printCountInput" value="">
+                    </span>
+                    <br>
+                    <span>Date:</span>
+                    <input type="text" name="date">
+                </div>
+            </div>
+
+
+            <div class="second_content_container">
+                <div class="particulars_amount_container">
+                    <div class="particulars">
+                        <div class="particulars_amount_header">
+                            <h4>P A R T I C U L A R S</h4>
+                        </div>
+                        <div class="text_area_container">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                           <input type="text" class="input_area">
+                        </div>
+
+                        <div class="total_amount">
+                            <div class="total_amount_header">
+                                <h4>TOTAL AMOUNT</h4>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="amount">
+                        <div class="particulars_amount_header">
+                            <h4>AMOUNT</h4>
+                        </div>
+
+                        <div class="text_area_container">
+                            <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                           <input type="text" class="input_area number-input">
+                        </div>
+                        <div class="total_input">
+                            <input type="text" class="number-input">
+                        </div>  
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+            <div class="third_content_container">
+                <div class="pre_che_app_rec_container">
+
+                    <div class="pre_che_app_inputs_container">
+                        <div class="pre_che_app_container">
+                            <p>Prepared By:</p>
+                            <p>Checked By:</p>
+                            <p>Approved By:</p>
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                            <br>
+                            <input type="text">
+                            <br>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="received_by_input_container">
+                        <div class="received_by">
+                            <p>Received By:</p>
+                        </div>
+                        <div class="input">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="button" id="printBtn">
+            <button class="printBtn" onclick="printContent()">Print</button>
+        </div>
+    </div>
+
+
+    <script src="../js/check.js"></script>
+</body>
+</html>
