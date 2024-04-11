@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACKNOWLEDGEMENT RECEIPT</title>
+    <link rel="icon" href="images/DAVALAND LOGO.png">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="selections" id="selections">
+        <label for="Choose Forms">CHOOSE FORMS</label>
+        <select name="forms" id="forms" onchange="selectForms()">
+            <option value="1">Acknowledgement Receipt</option>
+            <option value="2">Budget Request Form</option>
+            <option value="3">Investment Interest Form</option>
+            <option value="4">Sellers Payment</option>
+            <option value="5">Cash Voucher</option>
+            <option value="6">Check Voucher</option>
+        </select>
+    </div>
+    
+    <div class="container" id="container">
+        <div class="content_container" id="content_container">
+            <div class="header">
+
+                <div class="logo">
+                    <img src="images/DAVALAND LOGO.png" alt="">
+                    
+                </div>
+                <div class="header_title">
+                    <h1>DAVALAND REALTY CORP.</h1>
+                    <strong>Door 6 MCR Bldg. MacArthur Highway Talaga, 2315 Capas, Tarlac</strong>
+                    <br>
+                    <strong>Vat Reg. TIN : 626-320-529-00002</strong>
+                    <p>(045) 606-5122</p>
+                    <p>drem.davalandrealtycorp@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="content">
+                <h2>ACKNOWLEDGEMENT RECEIPT</h2>
+
+
+
+                <div class="n_date">
+                    <span>No:</span>
+                    <span class="print_count">
+                        <input type="text" id="printCountInput" value="">
+                    </span>
+                    <br>
+                    <span>Date:</span>
+                    <input type="text" name="date">
+                </div>
+                
+
+
+
+            <form>
+                <div class="received_from_tin">
+                    <label for="receivedFrom">Received from</label>
+                    <input type="text" name="receivedFrom">
+
+                    <label for="tin">TIN</label>
+                    <input type="text" name="tin">
+                </div>
+
+                <div class="address">
+                    <label for="address">Address</label>
+                    <input type="text">
+                </div>
+
+                <div class="block_lot_sqm_sum">
+
+                    <label for="block">Block</label>
+                    <input type="text" name="block">
+
+                    <label for="lot">Lot</label>
+                    <input type="text" name="lot">
+
+                    <label for="sqm">SQM</label>
+                    <input type="text" name="sqm">
+
+                    <label for="sum">the sum of Pesos</label>
+                    <input type="text" name="sum">
+
+                    <input type="text" name="sum">
+                    <label for="sum">(₱</label>
+                        <input type="text" class="number-input">)
+                    
+<br>
+                    <label for="">as partial/full payment for</label>
+                    <input type="text">
+
+                </div>
+
+
+                <div class="signa_table">
+                    <div class="bal_am_due">
+                        <div class="current_balance">
+                            <label for="currentBalance">Current Balance:</label>
+                            <input type="text" name="currentBalance" id="currentBalance" class="number-input">
+                        </div>
+    
+                        <div class="payment_amount">
+                            <label for="paymentAmount">Payment Amount:</label>
+                            <input type="text" name="paymentAmount" id="paymentAmount">
+                        </div>
+    
+                        <div class="balance_due">
+                            <label for="balanceDue">Balance Due:</label>
+                            <input type="text" name="balanceDue" id="balanceDue">
+                        </div>
+    
+                        <div class="authorized_signature">
+                            <input type="text" name="signature" id="signature">
+                            <strong>Authorized Signature</strong>
+                        </div>
+                    </div>
+    
+                    <div class="tables_container">
+                        <div class="format_of_payment">
+                            <p>FORMAT OF PAYMENT</p>
+                        </div>
+                        <div class="c_c_bank">
+                            <div class="cash">
+                               <p>CASH</p>
+                            </div>
+                            <div class="checkBox">
+                                <div class="checkers">
+                                    <label class="checkboxed">
+                                    <input type="checkbox">
+                                    <svg viewBox="0 0 64 64" height="1em" width="1em">
+                                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                                    </svg>
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <input type="text" id="value" class="number-input">
+                            </div>
+                        </div>
+
+
+                        <div class="c_c_bank">
+                            <div class="cash">
+                               <p>CHECK</p>
+                            </div>
+                            <div class="checkBox">
+                                <div class="checkers">
+                                    <label class="checkboxed">
+                                    <input type="checkbox">
+                                    <svg viewBox="0 0 64 64" height="1em" width="1em">
+                                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                                    </svg>
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <input type="text" id="value">
+                            </div>
+                        </div>
+                        
+                        <div class="c_c_bank">
+                            <div class="cash">
+                               <p>BANK</p>
+                            </div>
+                            <div class="checkBox">
+                                <div class="checkers">
+                                    <label class="checkboxed">
+                                    <input type="checkbox">
+                                    <svg viewBox="0 0 64 64" height="1em" width="1em">
+                                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                                    </svg>
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <input type="text" id="value">
+                            </div>
+                        </div>
+                        <div class="c_c_bank">
+                            <div class="cash">
+                               <p>OTHERS</p>
+                            </div>
+                            <div class="checkBox">
+                                <div class="checkers">
+                                    <label class="checkboxed">
+                                    <input type="checkbox">
+                                    <svg viewBox="0 0 64 64" height="1em" width="1em">
+                                      <path d="M 0 16 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 16 L 32 48 L 64 16 V 8 A 8 8 90 0 0 56 0 H 8 A 8 8 90 0 0 0 8 V 56 A 8 8 90 0 0 8 64 H 56 A 8 8 90 0 0 64 56 V 16" pathLength="575.0541381835938" class="path"></path>
+                                    </svg>
+                                  </label>
+                                </div>
+                            </div>
+                            <div class="value">
+                                <input type="text" id="value">
+                            </div>
+                        </div>
+                        <div class="c_c_bank">
+                            <div class="cash">
+                               <p class="total">TOTAL</p>
+                            </div>
+                            <div class="checkBox">
+                                <!-- <input type="checkbox" id="check"> -->
+                            </div>
+                            <div class="value">
+                                <input type="text" id="value" class="number-input">
+                            </div>
+                        </div>
+
+                        <div class="checker">
+                            <div class="checkNo">
+                                <label for="checkNo">Check No.:</label>
+                                <input type="text">
+                            </div>
+                            <div class="checkNo">
+                                <label for="checkNo">Check Date:</label>
+                                <input type="text">
+                            </div>
+                            <div class="checkNo checkNolast">
+                                <label for="checkNo">Bank Name/REF. NO.:</label>
+                                <input type="text">
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="red_sat">
+                            <div class="pn">
+                                <span>PN:</span>
+                                    <input type="text">
+                            </div>
+                            <p>Satellite Office-Talaga</p>
+                        </div>
+                    </div>
+                    
+                </div>  
+                
+                
+                
+
+                
+
+
+                
+            </form>
+
+            <button class="print" id="print" onclick="printContent()">Print</button>
+
+
+
+            </div>
+
+        </div>
+        
+    </div>
+
+
+
+    <script src="js/davaland.js"></script>
+</body>
+</html>
