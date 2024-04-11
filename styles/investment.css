@@ -85,7 +85,7 @@ body {
     border-bottom: 2px solid black;
 
 }
-.contact_number .contact_content_container {
+.contact_number .number_date {
     position: relative;
     float: right;
 }
